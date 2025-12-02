@@ -151,18 +151,12 @@ const FlashFitnessRedesign = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600')] bg-cover bg-center opacity-30"></div>
         
         <div className="relative z-20 max-w-7xl mx-auto px-6">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl flex">
             <div className="">
-                <img src={hero} alt="" />
+                <img src={hero} alt="Hero section image" />
             </div>
-            <h1 className="text-white text-6xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight leading-none">
-              ENERGIZING
-              <br />
-              YOUR SPACE
-            </h1>
-            <p className="text-gray-300 text-xl md:text-2xl mb-12 max-w-2xl leading-relaxed">
-              Professional wellness infrastructure and fitness solutions designed for South Africa's leading corporate environments.
-            </p>
+            
+           
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-[#AB1E29] text-white px-10 py-5 text-base font-semibold hover:bg-[#8B1821] transition-all inline-flex items-center justify-center gap-3 uppercase tracking-wide">
                 Schedule Consultation <ChevronRight size={20} />
@@ -183,7 +177,7 @@ const FlashFitnessRedesign = () => {
       </section>
 
       {/* Metrics Section */}
-      <section className="py-20 bg-white border-b border-gray-100">
+      {/*<section className="py-20 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {metrics.map((metric, idx) => {
@@ -200,7 +194,7 @@ const FlashFitnessRedesign = () => {
             })}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Services Section - Enhanced */}
       <section id="services" className="py-28 bg-gray-50">
@@ -498,10 +492,7 @@ const FlashFitnessRedesign = () => {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-10 h-10 bg-[#AB1E29] flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">FF</span>
-                </div>
-                <span className="font-bold text-xl tracking-wider">FLASHFIT</span>
+                <img src={logo} alt="Flash Fitness Logo" />
               </div>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 South Africa's premier provider of corporate fitness solutions. Energizing corporate spaces with professional wellness infrastructure and comprehensive facility management services.
